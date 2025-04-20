@@ -257,27 +257,33 @@
     <comp lib="8" loc="(780,95)" name="Text">
       <a name="text" val="BUS"/>
     </comp>
-    <comp loc="(1440,220)" name="PROGRAM_COUNTER"/>
-    <comp loc="(1460,440)" name="ACCUMULATOR"/>
+    <comp loc="(1430,220)" name="PROGRAM_COUNTER">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp loc="(1460,440)" name="ACCUMULATOR">
+      <a name="facing" val="south"/>
+    </comp>
     <comp loc="(1530,560)" name="ALU"/>
     <comp loc="(500,70)" name="CLOCK_CST"/>
     <wire from="(1110,250)" to="(1370,250)"/>
     <wire from="(1110,410)" to="(1350,410)"/>
     <wire from="(1110,570)" to="(1380,570)"/>
-    <wire from="(1290,210)" to="(1440,210)"/>
+    <wire from="(1290,210)" to="(1430,210)"/>
     <wire from="(1350,390)" to="(1350,410)"/>
     <wire from="(1350,390)" to="(1380,390)"/>
     <wire from="(1350,410)" to="(1350,430)"/>
     <wire from="(1350,430)" to="(1380,430)"/>
     <wire from="(1370,240)" to="(1370,250)"/>
-    <wire from="(1370,240)" to="(1400,240)"/>
+    <wire from="(1370,240)" to="(1390,240)"/>
     <wire from="(1370,250)" to="(1370,270)"/>
-    <wire from="(1370,270)" to="(1400,270)"/>
-    <wire from="(1440,210)" to="(1440,220)"/>
+    <wire from="(1370,270)" to="(1390,270)"/>
+    <wire from="(1430,210)" to="(1430,220)"/>
     <wire from="(1450,350)" to="(1450,380)"/>
     <wire from="(1450,350)" to="(1670,350)"/>
     <wire from="(1460,440)" to="(1460,550)"/>
-    <wire from="(1490,70)" to="(1490,220)"/>
+    <wire from="(1480,210)" to="(1480,220)"/>
+    <wire from="(1480,210)" to="(1490,210)"/>
+    <wire from="(1490,70)" to="(1490,210)"/>
     <wire from="(1490,70)" to="(1670,70)"/>
     <wire from="(1670,70)" to="(1670,350)"/>
     <wire from="(340,60)" to="(370,60)"/>
@@ -538,36 +544,38 @@
     <comp lib="1" loc="(990,350)" name="Controlled Buffer">
       <a name="width" val="16"/>
     </comp>
-    <comp lib="4" loc="(620,260)" name="Counter">
+    <comp lib="4" loc="(650,260)" name="Counter">
       <a name="appearance" val="logisim_evolution"/>
+      <a name="max" val="0xffff"/>
+      <a name="width" val="16"/>
     </comp>
     <wire from="(410,260)" to="(570,260)"/>
-    <wire from="(410,290)" to="(620,290)"/>
+    <wire from="(410,290)" to="(650,290)"/>
     <wire from="(410,320)" to="(570,320)"/>
-    <wire from="(410,350)" to="(570,350)"/>
-    <wire from="(410,400)" to="(570,400)"/>
+    <wire from="(410,350)" to="(580,350)"/>
+    <wire from="(410,400)" to="(600,400)"/>
     <wire from="(410,440)" to="(500,440)"/>
-    <wire from="(500,440)" to="(500,610)"/>
-    <wire from="(500,610)" to="(980,610)"/>
+    <wire from="(500,440)" to="(500,740)"/>
+    <wire from="(500,740)" to="(980,740)"/>
     <wire from="(570,260)" to="(570,280)"/>
-    <wire from="(570,280)" to="(620,280)"/>
+    <wire from="(570,280)" to="(650,280)"/>
     <wire from="(570,310)" to="(570,320)"/>
     <wire from="(570,310)" to="(610,310)"/>
-    <wire from="(570,340)" to="(570,350)"/>
-    <wire from="(570,340)" to="(620,340)"/>
-    <wire from="(570,370)" to="(570,400)"/>
-    <wire from="(570,370)" to="(620,370)"/>
+    <wire from="(580,340)" to="(580,350)"/>
+    <wire from="(580,340)" to="(650,340)"/>
+    <wire from="(600,370)" to="(600,400)"/>
+    <wire from="(600,370)" to="(650,370)"/>
     <wire from="(610,310)" to="(610,330)"/>
-    <wire from="(610,310)" to="(620,310)"/>
-    <wire from="(610,330)" to="(620,330)"/>
-    <wire from="(810,370)" to="(880,370)"/>
+    <wire from="(610,310)" to="(650,310)"/>
+    <wire from="(610,330)" to="(650,330)"/>
+    <wire from="(850,370)" to="(880,370)"/>
     <wire from="(880,330)" to="(880,370)"/>
     <wire from="(880,330)" to="(950,330)"/>
     <wire from="(950,300)" to="(1020,300)"/>
     <wire from="(950,300)" to="(950,330)"/>
     <wire from="(950,330)" to="(950,350)"/>
     <wire from="(950,350)" to="(970,350)"/>
-    <wire from="(980,360)" to="(980,610)"/>
+    <wire from="(980,360)" to="(980,740)"/>
     <wire from="(990,350)" to="(1020,350)"/>
   </circuit>
   <circuit name="ACCUMULATOR">
